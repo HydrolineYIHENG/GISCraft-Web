@@ -1,0 +1,75 @@
+{
+  "app": {
+    "title": "GISCraft",
+    "loading": "Loading..."
+  },
+  "nav": {
+    "home": "Map",
+    "login": "Login",
+    "favorites": "Favorites",
+    "feedback": "Feedback",
+    "admin": "Admin"
+  },
+  "map": {
+    "layers": "Layers",
+    "pois": "POIs",
+    "routes": "Routes",
+    "areas": "Areas",
+    "search": "Search...",
+    "noResults": "No results found"
+  },
+  "poi": {
+    "name": "Name",
+    "category": "Category",
+    "description": "Description",
+    "coordinates": "Coordinates",
+    "tags": "Tags",
+    "images": "Images",
+    "comments": "Comments",
+    "nearby": "Nearby",
+    "favorite": "Favorite",
+    "reportIssue": "Report Issue"
+  },
+  "route": {
+    "name": "Name",
+    "type": "Type",
+    "road": "Road",
+    "railway": "Railway",
+    "airway": "Air Route",
+    "metro": "Metro"
+  },
+  "area": {
+    "name": "Name",
+    "category": "Category"
+  },
+  "auth": {
+    "username": "Username",
+    "password": "Password",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "pois": "POIs",
+    "routes": "Routes",
+    "areas": "Areas",
+    "comments": "Comments",
+    "media": "Media",
+    "feedback": "Feedback",
+    "users": "Users",
+    "settings": "Settings"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "actions": "Actions",
+    "confirm": "Confirm",
+    "back": "Back",
+    "submit": "Submit",
+    "close": "Close"
+  }
+}
