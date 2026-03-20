@@ -1,6 +1,8 @@
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { MapContainer, useMap } from 'react-leaflet'
 import { useQuery } from '@tanstack/react-query'
+import L from 'leaflet'
+import 'leaflet/dist/leaflet.css'
 import {
   DynmapTileLayer,
   POILayer,
@@ -14,7 +16,6 @@ import { fetchPOIs, fetchRoutes, fetchAreas } from '@/api'
 import { useMapStore } from '@/stores'
 import { mcToLatLng } from '@/utils/coordinates'
 import type { POI, Route, Area, SearchResult } from '@/types'
-import 'leaflet/dist/leaflet.css'
 
 type DetailTarget =
   | { type: 'poi'; data: POI }
@@ -24,12 +25,13 @@ type DetailTarget =
 /** Helper component to fly to a location */
 function FlyToHandler({ target }: { target: { x: number; z: number } | null }) {
   const map = useMap()
-  const prevTarget = useRef<typeof target>(null)
 
-  if (target && target !== prevTarget.current) {
-    prevTarget.current = target
-    map.flyTo(mcToLatLng(target.x, target.z), map.getZoom() < 4 ? 4 : map.getZoom())
-  }
+  useEffect(() => {
+    if (target) {
+      map.flyTo(mcToLatLng(target.x, target.z), map.getZoom() < 4 ? 4 : map.getZoom())
+    }
+  }, [map, target])
+
   return null
 }
 
@@ -113,6 +115,3 @@ export default function MapPage() {
     </div>
   )
 }
-
-// We need Leaflet's L global for CRS.Simple
-import L from 'leaflet'
