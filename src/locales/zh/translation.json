@@ -1,0 +1,75 @@
+{
+  "app": {
+    "title": "GISCraft",
+    "loading": "加载中..."
+  },
+  "nav": {
+    "home": "地图",
+    "login": "登录",
+    "favorites": "收藏",
+    "feedback": "反馈",
+    "admin": "管理"
+  },
+  "map": {
+    "layers": "图层",
+    "pois": "兴趣点",
+    "routes": "路线",
+    "areas": "区域",
+    "search": "搜索...",
+    "noResults": "未找到结果"
+  },
+  "poi": {
+    "name": "名称",
+    "category": "分类",
+    "description": "描述",
+    "coordinates": "坐标",
+    "tags": "标签",
+    "images": "图片",
+    "comments": "评论",
+    "nearby": "附近",
+    "favorite": "收藏",
+    "reportIssue": "反馈问题"
+  },
+  "route": {
+    "name": "名称",
+    "type": "类型",
+    "road": "公路",
+    "railway": "铁路",
+    "airway": "航线",
+    "metro": "地铁"
+  },
+  "area": {
+    "name": "名称",
+    "category": "分类"
+  },
+  "auth": {
+    "username": "用户名",
+    "password": "密码",
+    "login": "登录",
+    "logout": "退出登录"
+  },
+  "admin": {
+    "dashboard": "仪表盘",
+    "pois": "兴趣点",
+    "routes": "路线",
+    "areas": "区域",
+    "comments": "评论",
+    "media": "媒体",
+    "feedback": "反馈",
+    "users": "用户",
+    "settings": "设置"
+  },
+  "common": {
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "create": "创建",
+    "search": "搜索",
+    "actions": "操作",
+    "confirm": "确认",
+    "back": "返回",
+    "submit": "提交",
+    "close": "关闭"
+  }
+}
